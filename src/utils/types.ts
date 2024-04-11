@@ -24,4 +24,11 @@ interface UserDb {
     generateAccessToken: () => string;
 }
 
-export { UserRequestBody, UserToken, UserDb }
+interface ProductQuery {
+    page: string | number;
+    limit: string | number;
+    sortType: string | number;
+    sortBy: string;
+}
+
+export { UserRequestBody, UserToken, UserDb, ProductQuery }
