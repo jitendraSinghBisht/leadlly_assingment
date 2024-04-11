@@ -2,6 +2,8 @@ import mongoose from "mongoose";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
+//add more feilds as per requirement
+//eg:- product visited, buy history, bookmarked etc...
 const userSchema = new mongoose.Schema({
     userName: {
         type: String,
